@@ -16,5 +16,14 @@ public class Studente {
 		} else {
 			return true;
 		}
+	};
+	
+	public void printResult() {
+		System.out.println("Studente " + id + ": ");
+		System.out.println("Percentuale Assenze: " + percentualeAssenze);
+		System.out.printf("Media Voti: %.2f\n", mediaVoti);
+		System.out.println("Promosso: " + (calcoloPromozione() ? "Sì" : "No"));
+		System.out.println("-------------------");
 	}
+	
 }
